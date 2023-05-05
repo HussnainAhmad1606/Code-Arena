@@ -43,7 +43,7 @@ useEffect(()=> {
       alt="Flowbite Logo"
     />
     <span className="self-center whitespace-nowrap text-xl font-semibold dark:text-white">
-      Flowbite
+      Code Arena
     </span>
   </Navbar.Brand>
   <div className="flex md:order-2">
@@ -59,17 +59,17 @@ useEffect(()=> {
     >
       Home
     </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      About
+    <Navbar.Link href="/popular">
+      Popular
     </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Services
+    <Navbar.Link href="/categories">
+      Categories
     </Navbar.Link>
-    <Navbar.Link href="/navbars">
+    <Navbar.Link href="/pricing">
       Pricing
     </Navbar.Link>
-    <Navbar.Link href="/navbars">
-      Contact
+    <Navbar.Link href="/about">
+      About
     </Navbar.Link>
   </Navbar.Collapse>
 </Navbar>

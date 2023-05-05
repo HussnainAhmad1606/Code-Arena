@@ -5,6 +5,7 @@ import styles from './page.module.css'
 import { UserProfile, useAuth } from "@clerk/nextjs";
 import { useUser } from "@clerk/nextjs";
 import { useState } from 'react';
+import CarouselComp from '@/components/CarouselComp';
 
 
 const inter = Inter({ subsets: ['latin'] })
@@ -14,9 +15,8 @@ export default function Home() {
 
   return (
    <>
-   <h1>
    
-    </h1>
+  <CarouselComp/>
    </>
   )
 }

@@ -2,6 +2,7 @@ import NavBar from '../components/NavBar'
 import '../css/globals.css'
 import { Inter } from 'next/font/google'
 import { ClerkProvider } from '@clerk/nextjs'
+import { FooterComp } from '@/components/FooterComp'
 const inter = Inter({ subsets: ['latin'] })
 
 export const metadata = {
@@ -17,6 +18,8 @@ export default function RootLayout({
         <body className={inter.className}>
         <NavBar/>
           {children}
+
+          <FooterComp/>
           </body>
       </html>
     </ClerkProvider>
