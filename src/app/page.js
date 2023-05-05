@@ -1,14 +1,21 @@
+'use client'
 import Image from 'next/image'
 import { Inter } from 'next/font/google'
 import styles from './page.module.css'
+import { UserProfile, useAuth } from "@clerk/nextjs";
+import { useUser } from "@clerk/nextjs";
+import { useState } from 'react';
+
 
 const inter = Inter({ subsets: ['latin'] })
 
 export default function Home() {
+  const { isLoaded, isSignedIn, user } = useUser();
+
   return (
    <>
-   <h1 className="text-3xl text-red-400 font-bold underline">
-    
+   <h1>
+   
     </h1>
    </>
   )
